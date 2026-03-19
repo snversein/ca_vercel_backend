@@ -319,5 +319,4 @@ def root():
     return send_from_directory('public', 'index.html')
 
 # Vercel handler
-def handler(environ, start_response):
-    return app(environ, start_response)
+app_entry = app
